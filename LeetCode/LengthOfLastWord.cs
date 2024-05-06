@@ -12,8 +12,8 @@ namespace LeetCode
         public int LengthoWord(string inputString)
         {
             int longest_word;
-            word_array = inputString.Trim().Split(" ");
             string last_word;
+            word_array = inputString.Trim().Split(" ");
             last_word = word_array[word_array.Length-1];
             Console.WriteLine(last_word);
             longest_word = last_word.Length;
