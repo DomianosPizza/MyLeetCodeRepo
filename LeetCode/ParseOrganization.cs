@@ -6,16 +6,13 @@ using System.Threading.Tasks;
 
 namespace LeetCode
 {
-    public class ValidAnagram
+    public class ParseOrganization
     {
-        public bool IsAnagram(string s, string t)
+        public string parseOrg(string str)
         {
-            for(int i =0; i < s.Length; i++) {
-            }
-
-
-
-            return false;
+            string s = "";
+            string orgName;
+            return "";
         }
     }
 }

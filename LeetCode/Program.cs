@@ -6,9 +6,8 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            LengthOfLastWord word = new LengthOfLastWord();
 
-            word.LengthoWord("Hello World");
+
 
         }
     }
