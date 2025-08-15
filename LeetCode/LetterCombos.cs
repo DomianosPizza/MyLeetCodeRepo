@@ -29,14 +29,18 @@ namespace LeetCode
 
             if (string.IsNullOrEmpty(digits))
                 return combos;
-            //loop through the string
-            for (int i = 0; i < digits.Length; i++) { //digit string loop "23"
-                string value = keypad[digits[i]];
-
-                for (int j = 0; j < value.Length; j++) { //keypad loop
-                    string s = keypad[digits[i]];
-                    combos[j]+=s;
+            
+            foreach(char digit in digits) //Foreach digit in our digits string
+            {
+                string letters = keypad[digit];
+                List<string> formCombos = new List<string>();
+                foreach (string bunchedLetter in combos) {
+                    foreach (char letter in letters) {
+                        //combos.Add(bunchedLetter + letter); we can't directly add onto combos because it hanges the frst for loop
+                        formCombos.Add(bunchedLetter + letter);
+                    }
                 }
+                combos = formCombos;
             }
 
             return combos;
