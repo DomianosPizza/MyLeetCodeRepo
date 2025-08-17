@@ -6,8 +6,6 @@ namespace LeetCode
     {
         static void Main(string[] args)
         {
-            LetterCombos combos = new LetterCombos();
-            combos.LetterCombinations("23");
 
 
         }
